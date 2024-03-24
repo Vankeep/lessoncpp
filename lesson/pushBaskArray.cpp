@@ -43,7 +43,7 @@ int main() {
      showArray(arr, size);
      pushBack(arr, size, 10);
      showArray(arr, size);
-     clearBack(arr, size, 2);
+     popBack(arr, size, 2);
      showArray(arr, size);
      delete[] arr;
      return 0;
