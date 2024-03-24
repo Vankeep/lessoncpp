@@ -18,13 +18,13 @@ int main() {
      int *b = new int(7);
      int *pb = b;
      int &bRef = *b;
-     cout << "b = \t\t" << b << endl;                  //b = 		0x1b06df99040
+     cout << "b = \t\t" << b << endl;                  //b = 	0x1b06df99040
      cout << "&b = \t" << &b << endl;                  //&b = 	0x42a87ffac8
      cout << "*b = \t" << *b << endl;                  //*b = 	7
      cout << "pb = \t" << pb << endl;                  //pb = 	0x1b06df99040
      cout << "&pb = \t" << &pb << endl;                //&pb = 	0x42a87ffac0
      cout << "*pb = \t" << *pb << endl;                //*pb = 	7
      cout << "bRef = \t" << bRef << endl;              //bRef = 	7
-     cout << "&bRef = \t" << &bRef << endl;            //&bRef = 	0x1b06df99040
+     cout << "&bRef = \t" << &bRef << endl;            //&bRef = 0x1b06df99040
      return 0;
 }
