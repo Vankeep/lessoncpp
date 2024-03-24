@@ -23,6 +23,6 @@ int main() {
      double b2 = 34.3333;
      cout << b1 << endl;                                              //34
      cout << b2 << endl;                                              //34.333
-
+     
      return 0;
 }
