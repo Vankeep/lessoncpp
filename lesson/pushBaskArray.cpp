@@ -26,7 +26,7 @@ void pushBack(int*& arr, int& size, const int value) {
      arr = tmpArr;
 }
 
-void clearBack(int*& arr, int& size, const int count = 1) {
+void popBack(int*& arr, int& size, const int count = 1) {
      int* newArr = new int [size - count] {};
      for (int i = 0; i < size - count; i++) {
           newArr[i] = arr[i];
