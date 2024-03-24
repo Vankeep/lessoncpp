@@ -8,9 +8,8 @@ using namespace std;
 
 int srtLen(const char* str) {
     int count = 0;
-    while (*str != '\0') {
+    while (*(str + count) != '\0') {
         count++;
-        str++;
     }
     return count;
 }
