@@ -8,6 +8,7 @@ using namespace std;
 */
 
 int main() {
+     setlocale(LC_ALL, "ru");
      int count = 1;
      for (int i = 33; i < 127; i++) {
           cout << i << " = " << (char)i << "\t";
