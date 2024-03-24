@@ -1,12 +1,14 @@
 // Показатель того что в параметрах фунции указатель это новыя переменная со своим адресом.
 // Консоль:
+//
 // showArray()
-// &arr = 0xc396bffdf0		arr = 0x2445a1d2560		8(0x2445a1d2560) 9(0x2445a1d2564) 9(0x2445a1d2568) 1(0x2445a1d256c) 7(0x2445a1d2570) 
+// &arr = 0xee979ff800		arr = 0x259cc050d70		*arr = 8		8(0x259cc050d70) 9(0x259cc050d74) 9(0x259cc050d78) 
 
 // main()
-// &arr = 0xc396bffe10		arr = 0x2445a1d2560		8(0x2445a1d2560) 9(0x2445a1d2564) 9(0x2445a1d2568) 1(0x2445a1d256c) 7(0x2445a1d2570) 
+// &arr = 0xee979ff820		arr = 0x259cc050d70		*arr = 8		8(0x259cc050d70) 9(0x259cc050d74) 9(0x259cc050d78) 
+
 #include <iostream>
-#define SIZE 5
+#define SIZE 3
 using namespace std;
 
 void fillArray(int* arr) {
@@ -16,7 +18,7 @@ void fillArray(int* arr) {
 }
 
 void showArray(int* arr) {
-     cout << "\nshowArray()\n&arr = " << &arr << "\t\tarr = " << arr << "\t\t";
+     cout << "\nshowArray()\n&arr = " << &arr << "\t\tarr = " << arr << "\t\t*arr = " << *arr<< "\t\t";
      for (int i = 0; i < SIZE; i++) {
           cout <<*(arr + i) << '(' << arr + i << ") ";
      }
@@ -28,7 +30,7 @@ int main() {
      int* arr = new int[SIZE] {};
      fillArray(arr);
      showArray(arr);
-     cout << "\nmain()\n&arr = " << &arr << "\t\tarr = " << arr << "\t\t";
+     cout << "\nmain()\n&arr = " << &arr << "\t\tarr = " << arr << "\t\t*arr = " << *arr<< "\t\t";
      for (int i = 0; i < SIZE; i++) {
           cout <<*(arr + i) << '(' << arr + i << ") ";
      }
