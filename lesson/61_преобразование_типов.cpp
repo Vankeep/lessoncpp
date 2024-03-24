@@ -18,10 +18,11 @@ int main() {
      cout << (char)(int)a << endl;                                    //
      cout << (char)a << endl;                                         //
 
+
      //Неявные преобразования
      int b1 = 34.3333;
      double b2 = 34.3333;
-     cout << b1 << endl;                                              //34
+     cout << b1 << endl;                                              //34 
      cout << b2 << endl;                                              //34.333
      
      return 0;
