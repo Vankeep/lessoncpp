@@ -20,11 +20,12 @@ public:
 
 int main() {
      Point one(3,9);
-     Point two(3,9);
+     Point two(3,4);
      return 0;
 }
 
 /*
 Console:
-Вызван конструктор класса 0x87369ff768
+Вызван конструктор класса 0xee73fff8b8
+Вызван конструктор класса 0xee73fff8b0
 */
