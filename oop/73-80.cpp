@@ -37,6 +37,7 @@ public:
      }
 
      ~Human(){
+          cout << "Уничтожен класс " << this->name <<endl;
           delete[] this->listArr;
      }
 
