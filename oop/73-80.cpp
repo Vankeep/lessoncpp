@@ -72,3 +72,18 @@ int main() {
      return 0;
 }
 
+/*
+log -> Создан класс No name
+log -> Создан класс Tom
+log -> Создан класс Bob
+
+log -> Метод main()
+Name:No name Age:0 List:[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Name:Tom Age:23 List:[0, 0]
+Name:Bob Age:21 List:[55, 65]
+No name
+
+log -> Уничтожен класс Bob
+log -> Уничтожен класс Tom
+log -> Уничтожен класс No name
+*/
