@@ -23,3 +23,8 @@ int main() {
      Point two(3,9);
      return 0;
 }
+
+/*
+Console:
+Вызван конструктор класса 0x87369ff768
+*/
