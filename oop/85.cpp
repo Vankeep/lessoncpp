@@ -20,6 +20,7 @@ public:
      }
 
      Point operator+(const Point& obj) {
+          printf("Перегрузка оператора \"+\"\n");
           Point resp(this->arr[0] + obj.arr[0], this->arr[1] + obj.arr[1]);
           return resp;
      }
