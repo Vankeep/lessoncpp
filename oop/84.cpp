@@ -3,7 +3,7 @@
 using namespace std;
 
 /*
-Перегрузка == и !=
+Перегрузка операторов == и !=
 */
 class Point {
      int* arr;
